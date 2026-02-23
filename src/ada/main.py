@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 
 from ada.api.health import router as health_router
+from ada.api.webhooks import router as webhooks_router
 from ada.core.config import settings
 
 app = FastAPI(
@@ -11,3 +12,4 @@ app = FastAPI(
 )
 
 app.include_router(health_router)
+app.include_router(webhooks_router)
