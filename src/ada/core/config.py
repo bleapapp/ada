@@ -14,5 +14,9 @@ class Settings(BaseSettings):
     default_model: str = "gpt-4o-mini"
     classifier_model: str = "gpt-4o-mini"
 
+    # Auth
+    jwt_secret: str = ""
+    jwt_algorithm: str = "HS256"
+
 
 settings = Settings()
