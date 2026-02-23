@@ -10,5 +10,9 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
 
+    # LLM
+    default_model: str = "gpt-4o-mini"
+    classifier_model: str = "gpt-4o-mini"
+
 
 settings = Settings()
